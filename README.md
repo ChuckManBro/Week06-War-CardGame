@@ -1,6 +1,4 @@
-# Week-6 Coding Assignment
-
-# War Card Game
+# WAR Card Game
 
 An automated version of the classic card game WAR.
 
