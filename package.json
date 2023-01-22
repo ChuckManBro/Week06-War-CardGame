@@ -1,0 +1,23 @@
+{
+  "name": "week06-war-cardgame",
+  "version": "1.0.0",
+  "description": "test functions in war game",
+  "main": "attempt1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuckManBro/Week06-War-CardGame.git"
+  },
+  "author": "Charles Cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChuckManBro/Week06-War-CardGame/issues"
+  },
+  "homepage": "https://github.com/ChuckManBro/Week06-War-CardGame#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}

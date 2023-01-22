@@ -98,7 +98,7 @@ function playGame() {
 			player2.score++;
 			console.log(`${player2.name}(${player2.score}-${player1.score}) wins this round`);
 		} else {
-			console.log(`This round was a tie.`);
+			console.log(`This round was a tie`);
 		}
 	}
 }
@@ -106,17 +106,18 @@ playGame();
 
 // display final scores, and declare the winner (or tie)
 
-function declareWinner() {
+function declareWinner(score1, score2) {
 	let declaration = '';
-	if (player1.score > player2.score) {
-		declaration = `🏆 ${player1.name} wins the game, ${player1.score} to  ${player2.score}! 🏆`;
-	} else if (player2.score > player1.score) {
-		declaration = `🏆 ${player2.name} wins the game, ${player2.score} to  ${player1.score}! 🏆`;
+	if (score1 > score2) {
+		declaration = `🏆 ${player1.name} wins the game, ${score1} to  ${score2}! 🏆`;
+	} else if (score2 > score1) {
+		declaration = `🏆 ${player2.name} wins the game, ${score2} to  ${score1}! 🏆`;
 	} else {
 		declaration = `The game ended in a tie!`;
 	}
 	console.log(
 		`\n===================================\n${declaration}\n===================================`
 	);
+	return declaration;
 }
-declareWinner();
+declareWinner(player1.score, player2.score);
